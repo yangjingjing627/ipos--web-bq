@@ -1,0 +1,149 @@
+@import '../variables.less';
+shop-message {
+	display: block;
+	margin-top: 0.185185rem;
+	font-size: 0.37037rem;
+	//font-size: 0.333333rem
+    .fit.card{
+       .padding(15,15,15,30) 
+    }
+	.card {
+		width: 7.787037rem;
+		background: #fff;
+		margin: auto;
+		border: 1px solid @border-color;
+		border-radius: @radius;
+		display: block;
+		.padding(10,15,10,15);
+		margin-bottom: 0.185185rem;
+		position: relative;
+
+		input[type="checkbox"] {
+			height: 0.37037rem;
+		    width: 0.37037rem;
+		    vertical-align: middle;
+		}
+
+		label {
+			display: block;
+			padding: 0.185185rem 0;
+			border-bottom: 1px solid #cccccc;
+
+			input {
+				border: none;
+				outline: none;
+			}
+			textarea {
+				border: none;
+				outline: none;
+				vertical-align: -webkit-baseline-middle;
+				resize: none;
+				height: 0.925926rem;
+			}
+			.notice {
+				vertical-align: top;
+    			display: inline-block;
+    			padding-top: 1px;
+			}
+
+		}
+		.up-qrcode{
+			.width(40);
+			.height(40);
+			position: absolute;
+			.top(5);
+			.left(10);
+			background: url(../imgs/qrcode.png) no-repeat;
+			background-size: contain;
+		}
+		.up-text{
+			.padding(50,0,0,0);
+		}
+	}
+
+	.card.qrcode {
+		// height: 10.342593rem;
+		.height(400);
+		position: relative;
+		.change-qrcode{
+			.width(160);
+			.height(30);
+			.line-height(30);
+			position: absolute;
+			top:7px;
+			right: 15px;
+			border: 1px solid #FE6464;
+			color: #FE6464;
+			.font-size(17);
+			text-align: center;
+			border-radius: 5px;
+		}
+		.card-usre-de{
+			.font-size(16);
+			color: #999;
+			.line-height(16);
+			.padding(0,8,0,0);
+		}
+		.show-switch {
+			width: 100%;
+			.height(38);
+			.padding(0,0,20,0);
+			span{
+				display: inline-block;
+			}
+			span.left{
+				float: left;
+			}
+			span.right{
+				float: right;
+				.width(56);
+				.height(26);
+				.left(80);
+				.top(13);
+			}
+			span.close{
+				background: url(../imgs/colse.png) no-repeat;
+				background-size: contain;
+			}
+			span.open{
+				background: url(../imgs/open.png) no-repeat;
+				background-size: contain;
+			}
+		}
+	}
+
+	.shop-message-qrcode {
+		.width(280);
+		.height(280);
+		display: block;
+		margin: 10px auto;
+	}
+
+	.save-shop-message {
+		text-align: center;
+		// margin-top: 0.740741rem;
+		margin-top: 15px;
+
+		button {
+			border: none;
+			background-color: @red;
+			font-size: 0.444444rem;
+			color: #ffffff;
+			height: 0.925926rem;
+			width: 2.777778rem;
+			line-height: 0.555556rem;
+			padding: 0 0.37037rem;
+			border-radius: @radius;
+			vertical-align: top;
+			margin-right: 0.833333rem;
+		}
+	}
+}
+
+up-qrcode{
+	.up-qrcode{
+		.width(350);
+
+
+	}
+}

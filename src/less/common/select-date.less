@@ -1,0 +1,40 @@
+@import '../variables.less';
+.select-date-select{
+  width: 243px;
+  background: #fff;
+  position: absolute;
+  top:42px;
+}
+.select-date{
+  width: 243px;
+  height: 32px;
+  line-height: 32px;
+  display: flex;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  a.active{
+    background: #00D8C9;
+    color: #fff;
+  }
+  a{
+    display: block;
+    flex: 1;
+    border-left: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+    .input input#J-xl-2{
+      opacity: 0;
+    }
+    .input, .input input{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left:0;
+      background: transparent;
+    }
+  }
+  a:first-child{
+    border-left: none;
+  }
+}

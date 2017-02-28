@@ -1,0 +1,259 @@
+@import '../variables.less';
+income{
+  display: block;
+  width: 100%;
+  height: 100%;
+  .income-content{
+    width: 100%;
+    height: 100%;
+    .padding(20,60,20,20);
+    position: relative;
+    .fl-left{
+      float: left;
+    }
+    .fl-right{
+      float: right;
+    }
+    .clear{
+      clear: both;
+    }
+    .income-top{
+      position: absolute;
+      top:10px;
+      width: 100%;
+      .height(40);
+      .line-height(40);
+      display: flex;
+      .font-size(16);
+      text-align: center;
+
+      a{
+        display: block;
+        .width(95);
+        height: 100%;
+        background: #fff;
+        color: #505050;
+        border-radius: 3px;
+        margin-right: 13px;
+      }
+      a.active{
+        background: #FE5F5F;
+        color: #fff;
+        border: 1px solid #FE5F5F;
+      }
+    }
+    .income-text{
+      width: 100%;
+      display: flex;
+      text-align: left;
+      height: 100%;
+
+      .left{
+        width: 50%;
+        height: 100%;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        position: relative;
+        background: #fff;
+
+        .income-record{
+          .padding(0,7,0,7);
+          h4{
+            .font-size(18);
+            color: #333;
+            .line-height(33);
+            .padding(16,0,16,0);
+            i{
+              color: #FE5F5F;
+              font-style: normal;
+
+            }
+          }
+          ul{
+            display: block;
+            width: 100%;
+            margin-top: 7px;
+            border-bottom: 1px solid #ccc;
+
+            li{
+              display: block;
+              border-top: 1px solid #ccc;
+              .padding(16,7,16,7);
+
+              div{
+                height: 30px;
+                line-height: 30px;
+                .font-size(16);
+                color: #666;
+
+                span{
+                  display: inline-block;
+                }
+              }
+            }
+
+          }
+        }
+      }
+
+    }
+    .income-account-edit,.income-account{
+      color: #505050;
+      .font-size(18);
+      width: 100%;
+      position: relative;
+      height: 100%;
+
+      ul{
+        display: block;
+        width: 100%;
+        .padding(25,12,50,0);
+
+        li{
+          display: block;
+          width: 100%;
+          .height(43);
+          .line-height(43);
+
+          span{
+            display: inline-block;
+          }
+        }
+      }
+      .button{
+        position: absolute;
+        .bottom(25);
+        width: 100%;
+
+        a{
+          display: block;
+          margin: 0 auto;
+          background: #fe5f5f;
+          border-radius: 3px;
+          color: #fff;
+          text-align: center;
+          .width(150);
+          .height(50);
+          .line-height(50);
+        }
+      }
+    }
+    .income-account-edit{
+      ul{
+        li{
+          display: flex;
+
+        }
+        li.active{
+          span.fl-left{
+            color: #FE5F5F;
+          }
+          span.fl-right{
+            border: 1px solid #FE5F5F;
+          }
+        }
+
+        .fl-left{
+          flex: 2;
+          text-align: left;
+        }
+
+        .fl-right{
+          text-align: right;
+          flex: 5;
+          border: 1px solid #ccc;
+          .height(25);
+          .line-height(25);
+          position: relative;
+          .top(9);
+          input{
+            width: 100%;
+            .height(22);
+            text-align: right;
+            color: #666;
+            padding-right: 5px;
+          }
+        }
+      }
+
+    }
+
+  }
+}
+pop-modify-phone {
+  .modify-pop{
+    display: block;
+    width: 100%;
+    .padding(25,10,25,3);
+    h4{
+      color: #505050;
+      .font-size(18);
+      .line-height(27);
+    }
+    h5{
+      .font-size(16);
+      color: #666;
+      .line-height(26);
+    }
+    .modify-phone{
+      width: 100%;
+      .height(60);
+      .padding(0,10,0,10);
+      text-align: center;
+      span{
+        display: inline-block;
+      }
+      span.input{
+        .width(200);
+        .height(40);
+        border: 1px solid #999;
+        .line-height(40);
+        input{
+          width: 100%;
+          .height(36);
+          .line-height(20);
+          .padding(10,8,10,8);
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+pop-add-card{
+  .add-card{
+    display: block;
+    width: 100%;
+    .padding(50,15,50,20);
+    h4{
+      .font-size(18);
+      color: #505050;
+      .line-height(20);
+    }
+    .li{
+      .height(45);
+      .padding(0,20,0,0);
+      .line-height(25);
+      border-bottom: 1px solid #999;
+      .font-size(16);
+      color: #666;
+      position: relative;
+
+      span{
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        .top(20);
+      }
+      input{
+        .line-height(23);
+        .padding(50,0,0,0);
+        width: 100%;
+      }
+      input.long{
+        .padding(80,0,0,0)
+      }
+    }
+  }
+}

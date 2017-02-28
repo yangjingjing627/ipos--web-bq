@@ -1,0 +1,111 @@
+.wraps,.circle,.percent{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .wraps{
+      top: 20%;
+        background-color: #ccc;
+        &.wrap-r{
+
+          background-color: #FF8187;
+
+        }
+    }
+    .circle{
+        box-sizing: border-box;
+        border:10px solid #ccc;
+        clip:rect(0,100px,100px,50px);
+        &.circle-r {
+          border:10px solid #FF8187;
+        }
+    }
+    .clip-auto{
+        clip:rect(auto, auto, auto, auto);
+    }
+    .percent{
+        box-sizing: border-box;
+        top:-10px;
+        left:-10px;
+    }
+    // .percent-left{
+  .wraps  .left{
+
+        transition:transform ease;
+        border:10px solid #00D8C9;
+        clip: rect(0,50px,100px,0);
+    }
+    // .percent-right{
+    .wraps  .right{
+
+        border:10px solid #00D8C9;
+        clip: rect(0,100px,100px,50px);
+    }
+    .wth0{
+        width:0;
+    }
+
+    #circleTwo .num,#circleOne .num{
+        position: absolute;
+        box-sizing: border-box;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        font-size: 12px;
+        color: #00D8C9;
+        left: 10px;
+        top: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        z-index: 1;
+        display: table;
+        b{
+          display: table-cell;
+        }
+        p:nth-child(2){
+          color: #333333;
+        }
+    }
+business-assistant .business-assistant .b-s-con .brief-report.r-report .r-week-sale .num{
+  position: absolute;
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 12px;
+  color: #00D8C9;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 1;
+  display: table;
+  p{
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  p:nth-child(1){
+    margin-top: 20%;
+  }
+  b{
+    display: table-cell;
+  }
+  p:nth-child(2){
+    color: #333333;
+  }
+}
+.totalMem{
+  position: absolute;
+  width: 100%;
+  bottom: -30px;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+}

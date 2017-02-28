@@ -1,0 +1,79 @@
+/*
+ * variables
+ */
+
+@red: #FE6464;
+@gray: #CCCCCC;
+@background: #EAEAEA;
+@border-color: #CCCCCC;
+@color: #666666;
+@radius: 5px;
+@rate: 54;
+@base: 1rem;
+@sidebar-w: ((90 / @rate) * @base);
+@top-h: ((78 / @rate) * @base);
+@ipos-color: #00A89C;
+@bpos-color: #FFE84D;
+.white-box {
+	background: #FFF;
+	border: 1px solid @border-color;
+	border-radius: @radius;
+}
+
+.red-box {
+	background: @red;
+	color: #FFF;
+	border-radius: @radius;
+}
+
+.height (@h:0) {
+	height: ((@h / @rate) * @base);
+}
+.min-height() {
+	min-height: ((@h / @rate) * @base);
+}
+.width (@w:0) {
+	width: ((@w / @rate) * @base);
+}
+.min-width (@w:0) {
+	min-width: ((@w / @rate) * @base);
+}
+.left (@s) {
+	left: ((@s / @rate) * @base);
+}
+.right (@s) {
+	right: ((@s / @rate) * @base);
+}
+.top (@s) {
+	top: ((@s / @rate) * @base);
+}
+.bottom (@s) {
+	bottom: ((@s / @rate) * @base);
+}
+.margin (@l:0, @t:0, @r:0, @b:0) {
+	margin-left: ((@l / @rate) * @base);
+	margin-top: ((@t / @rate) * @base);
+	margin-right: ((@r / @rate) * @base);
+	margin-bottom: ((@b / @rate) * @base);
+}
+.padding (@l:0, @t:0, @r:0, @b:0) {
+	padding-left: ((@l / @rate) * @base);
+	padding-top: ((@t / @rate) * @base);
+	padding-right: ((@r / @rate) * @base);
+	padding-bottom: ((@b / @rate) * @base);
+}
+.line-height (@h:0) {
+	line-height: ((@h / @rate) * @base);
+}
+.font-size (@fs:0) {
+	font-size: ((@fs / @rate) * @base);
+}
+.border-radius(@b:0){
+	border-radius:((@b / @rate) * @base);
+}
+.background-size(@b:0){
+	background-size:((@b / @rate) * @base);
+}
+.border-radius(@b:0){
+	border-radius:((@b / @rate) * @base);
+}

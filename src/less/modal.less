@@ -1,0 +1,125 @@
+@import 'variables.less';
+/*
+ *  Modal style
+ */
+modal,
+pop {
+    display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    align-self: center;
+    // 结算弹出应找零钱
+    .modal-paychange{
+      padding: 30px;
+      div{
+        font-size: 24px;
+        line-height: 24px;
+        height: 50px;
+        color: #000;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+      }
+      p{
+        text-align: center;
+        font-size: 38px;
+        padding: 40px 0 15px;
+        color: #000;
+      }
+    }
+    // 更新版本
+    .modal-dialog {
+        width: 500px;
+        /*         margin: auto auto; */
+        background: #fff;
+        background-clip: padding-box;
+        border-radius: 6px;
+        outline: 0;
+        height: auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+    // 浮层标题
+    .modal-title {
+        color: #fe5f5f;
+        width: 100%;
+        .font-size(18);
+        text-align: center;
+        .height(38);
+        .line-height(38);
+        border-bottom: 1px solid #ccc;
+    }
+    //浮层中间内容
+    .modal-container {
+        padding: 0.185185rem 0.37037rem;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        // position: relative;
+        /*         // padding-bottom: 52px; */
+
+    }
+    .modal-container * {
+        white-space: pre-line;
+        word-wrap: break-word;
+    }
+    .modal-submit {
+        position: relative;
+        text-align: center;
+        padding: 0.277778rem;
+        margin: 0 0.37037rem;
+        height: 1.481481rem;
+    }
+    .modal-submit a.btn {
+        margin: 0 0.185185rem;
+        width: 3.240741rem;
+        height: 0.925926rem;
+        line-height: 0.925926rem;
+        color: #ffffff;
+        font-size: 0.333333rem;
+        // font-weight: bold;
+        border-radius: @radius;
+        display: inline-block;
+    }
+    .modal-submit a.btn.btn-default {
+        background: #fff;
+        border: 1px solid #ccc;
+        color: #FE6464;
+    }
+    .modal-submit a.btn.small {
+        width: 1.388889rem;
+    }
+    .modal-submit a.three {
+        .width(118);
+    }
+    .modal-submit a.btn.btn-primary {
+        background: @red;
+    }
+    .about-close {
+        .width(40);
+        .height(40);
+        position: absolute;
+        top: 0;
+        right: 0;
+        .font-size(20);
+        background: url("../imgs/wclose.png") no-repeat center;
+        background-size: 22px;
+    }
+
+}

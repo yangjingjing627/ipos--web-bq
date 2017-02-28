@@ -1,0 +1,275 @@
+@import '../variables.less';
+attain {
+    .attain {
+        width: 100%;
+        height: 100%;
+        .attain-list {
+            width: 100%;
+            height: 100%;
+            ul {
+                display: block;
+                width: 100%;
+                height: 100%;
+                .padding(30,25,30,25);
+                -webkit-overflow-scrolling: touch;
+                overflow-y: auto;
+                li.list {
+                    position: relative;
+                    .width(250);
+                    .height(175);
+                    .margin(20,0,20,25);
+                    background: #FFFFFF;
+                    display: block;
+                    text-align: center;
+                    float: left;
+                    -webkit-box-shadow: 1px 4px 4px 4px rgba(182, 160, 159, 0.5);
+                    -moz-box-shadow: 1px 4px 4px 4px rgba(182, 160, 159, 0.5);
+                    box-shadow: 1px 4px 4px 4px rgba(182, 160, 159, 0.5);
+                    .attain_top {
+                        .width(250);
+                        .height(124);
+                        .left {
+                            float: left;
+                            .width(90);
+                            height: 100%;
+                            border-right: 1px solid #ccc;
+                            position: relative;
+                            h3 {
+                                .margin(0,10,0,11);
+                                .font-size(17);
+                                color: #FE5F5F;
+                                font-weight: normal;
+                                .line-height(17);
+                                text-align: center;
+                            }
+                            h5 {
+                                .margin(0,11,0,0);
+                                .font-size(12);
+                                color: #666;
+                                font-weight: normal;
+                                .line-height(12);
+                                position: absolute;
+                                width: 100%;
+                                .bottom(8);
+                            }
+                            .img {
+                                .width(50);
+                                .height(50);
+                                margin: 0 auto;
+                                position: absolute;
+                                .bottom(28);
+                                .left(20);
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .right {
+                            float: right;
+                            .width(160);
+                            height: 100%;
+                            ul {
+                                display: block;
+                                width: 100%;
+                                .padding(0,5,0,0);
+                                li {
+                                    width: 100%;
+                                    text-align: center;
+                                    .title {
+                                        .font-size(12);
+                                        color: #505050;
+                                        .padding(0,8,0,0);
+                                        .line-height(12);
+                                        -webkit-transform-origin-x: 0;
+                                        -webkit-transform: scale(0.92);
+                                    }
+                                    .num {
+                                        .font-size(12);
+                                        color: #999;
+                                        .line-height(13);
+                                        -webkit-transform-origin-x: 0;
+                                        -webkit-transform: scale(0.84);
+                                    }
+                                    .line {
+                                        .margin(12,0,13,0);
+                                        .height(3);
+                                        background: #ccc;
+                                        position: relative;
+                                        border-radius: 3px;
+                                        overflow: hidden;
+                                        .co {
+                                            position: absolute;
+                                            width: 50%;
+                                            left: 0;
+                                            top: 0;
+                                            height: 100%;
+                                            background: #FE5F5F;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .attain_bottom {
+                        .width(250);
+                        .height(40);
+                        .padding(30,11,0,0);
+                        position: relative;
+                        bottom: 0;
+                        border-top: 1px solid #CCCCCC;
+                        .icon_bottom {
+                            .width(40);
+                            .height(30);
+                            position: absolute;
+                            .top(15);
+                        }
+                        .icon_bottom.atta-coupon {
+                            background: url("../imgs/ach-coupon.png") no-repeat;
+                            .background-size(30);
+                        }
+                        .icon_bottom.atta-ad {
+                            background: url("../imgs/ad-income.png") no-repeat;
+                            .background-size(30);
+                        }
+                        .icon_bottom.atta-app {
+                            background: url("../imgs/reward-app.png") no-repeat;
+                            .background-size(22);
+                        }
+                        .icon_bottom.atta-global {
+                            background: url("../imgs/re-global.png") no-repeat center top;
+                            .background-size(22);
+                        }
+                        h5{
+                          text-overflow: ellipsis;
+                          display: -webkit-box;
+                          -webkit-line-clamp: 1;
+                          -webkit-box-orient: vertical;
+                          overflow: hidden;
+                          word-break: break-all;
+                          white-space: normal;
+                          .padding(0,0,80,0)
+                        }
+                        h5.atta-app {
+                            color: #7DD43D;
+                            .margin(40,8,0,0);
+                        }
+                        h5.atta-one-cou {
+                            color:@red;
+                            .margin(40,8,0,0);
+                        }
+                        h5.atta-ad {
+                            .margin(40,8,0,0);
+                            color: #3BC9F2;
+                        }
+                        h5.atta-global{
+                          .margin(40,8,0,0);
+                          color: #359df5;
+                        }
+                        h5 {
+                            .height(17);
+                            .margin(40,0,0,0);
+                            .font-size(12);
+                            color: #FE5F5F;
+                            font-weight: normal;
+                            text-align: left;
+                            .line-height(17);
+                        }
+                        a.cancel {
+                            background: #ccc;
+                        }
+                        a {
+                            display: block;
+                            text-align: center;
+                            .width(60);
+                            .height(31);
+                            .line-height(30);
+                            background: #fe5f5f;
+                            color: #FFFFFF;
+                            position: absolute;
+                            .right(20);
+                            .top(9);
+                            border-radius: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+attain-sart{
+  .attain-sart{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom:0;
+    z-index: 99;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    .cover{
+      background: #000;
+      opacity: 0.5;
+      position: absolute;
+      top:0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    .sart{
+      .width(546);
+      .height(398);
+      margin: auto;
+      position: relative;
+      background: url(../imgs/re-sart.png) no-repeat;
+      background-size: cover;
+      text-align: center;
+      .title{
+        position: absolute;
+        .top(98);
+        width: 100%;
+        .font-size(25);
+        color: #FF2948;
+      }
+      .info{
+        position: absolute;
+        .top(140);
+        width: 100%;
+        .font-size(35);
+        color: #FF2948;
+      }
+      .button{
+        position: absolute;
+        .width(340);
+        .height(60);
+        .left(103);
+        .bottom(66);
+        background: #FFCB3E;
+        text-align: center;
+        .border-radius(25);
+        a{
+          display: block;
+          color: #fff;
+          width: 100%;
+          height: 100%;
+          .line-height(60);
+          .font-size(23);
+        }
+      }
+      .cancel{
+        position: absolute;
+        .bottom(32);
+        text-align: center;
+        width: 100%;
+
+        span{
+          color: #fff;
+          .font-size(18);
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+  }
+}

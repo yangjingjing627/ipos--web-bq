@@ -1,0 +1,250 @@
+@import '../variables.less';
+
+@spaceing:6px;
+
+.balance-wrap {
+	width: 60%;
+	height: 86%;
+	margin: 4% auto 0;
+}
+
+.balance-select {
+	overflow: hidden;
+	height: 36%;
+
+	ul {
+		height: 100%;
+		display: flex;
+		font-size: 30px;
+		flex-direction: column;
+
+		li {
+			width: 100%;
+			border-bottom: 1px solid @border-color;
+		}
+
+	}
+
+	.pay-info {
+		.white-box;
+		float: left;
+		width: 64%;
+		.padding(30,0,30);
+
+		li {
+			height: 33.33%;
+			display: table;
+		}
+
+		li:last-child{
+			border-bottom: none;
+		}
+
+		.red {
+			color: @red;
+		}
+
+		p {
+			display: table-cell;
+			vertical-align: middle;
+			position: relative;
+		}
+
+		strong {
+			position: absolute;
+			font-size: 40px;
+			margin-top: -5px;
+			right: 0;
+		}
+
+	}
+
+	.pay-type {
+		float: right;
+		width: 30%;
+		margin-right: @spaceing * 2;
+
+		li {
+			border-right: 1px solid @border-color;
+			border-left: 1px solid @border-color;
+			background-color: #FFF;
+			height: 25%;
+		}
+
+		li:first-child{
+			border-top: 1px solid @border-color;
+			border-radius: 5px 5px 0 0;
+		}
+
+		li:last-child{
+			border-radius: 0 0 5px 5px;
+		}
+
+		li.cash{
+			background: url("../imgs/cash.png") #FFF no-repeat center center;
+			background-size: 38%;
+		}
+		li.cash.active{
+			background-color: @red;
+			background-image: url("../imgs/cash_a.png");
+		}
+		li.alipay{
+			background: url("../imgs/alipay.png") #FFF no-repeat center center;
+			background-size: 50%;
+		}
+		li.alipay.active{
+			background-color: #009fdf;
+			background-image: url("../imgs/alipay_a.png")
+		}
+		li.wechat{
+			background: url(../imgs/wechat.png) #FFF no-repeat center center;
+			background-size: 42%;
+		}
+		li.wechat.active{
+			background-color: #7dd43d;
+			background-image: url("../imgs/wechat_a.png")
+		}
+		li.bank{
+			background: url(../imgs/bank.png) #FFF no-repeat center center;
+			background-size: 50%;
+		}
+		li.bank.active{
+			background-color: #4a506a;
+			background-image: url("../imgs/bank_a.png")
+		}
+
+	}
+}
+
+.keyboard {
+	margin-top: 2%;
+	display: table;
+	height: 64%;
+	width: 100%;
+
+	table {
+		width: 100%;
+		height: 100%;
+		border-spacing: @spaceing;
+		margin-left: @spaceing * -1;
+		border-collapse: separate;
+	}
+
+	td {
+		width: 14.2%;
+		height: 25%;
+		.white-box;
+		vertical-align: middle;
+		text-align: center;
+		font-size: 26px;
+		cursor: pointer;
+	}
+
+	td.payback-option {
+		width: 28.4%;
+		border: none;
+		background: none;
+		font-size: 18px;
+
+		p {
+			display: inline-block;
+			text-indent: 20px;
+			background: url('../imgs/option.png') no-repeat left center;
+			background-size: 14px;
+		}
+
+		p.on {
+			background-image: url('../imgs/option-checked.png');
+		}
+	}
+
+	td.red {
+		color: @red;
+		font-size: 18px;
+	}
+
+	td.big {
+		background: @red;
+		color: #FFF;
+		font-size: 40px;
+	}
+
+	td.backspace {
+		background: url('../imgs/backspace.png') no-repeat center center #FFF;
+		background-size: 27px;
+	}
+
+	.pic-pay {
+		img{
+			height: 4.07407407rem;
+		    width: 4.07407407rem;
+		    margin: 0 auto;
+		    display: block;
+		}
+
+		.code-pic {
+			.height(220);
+			.width(220);
+			margin: 0 auto;
+		}
+
+		// .wechat-code {
+		// 	background: url('../imgs/pay-code.png') no-repeat center center;
+		// 	background-size: cover;
+		// }
+
+		// .alipay-code {
+		// 	background: url('../imgs/pay-code.png') no-repeat center center;
+		// 	background-size: cover;
+		// }
+
+		.bank-code {
+			background: url('../imgs/bank-pay.jpg') no-repeat right center;
+			background-size: auto 100%;
+		}
+
+		p {
+			color: #505050;
+			font-size: 18px;
+			.margin(0, 10);
+		}
+	}
+}
+
+.discount {
+	.width(420);
+	.line-height(34);
+	.padding(0, 10);
+	margin: 0 auto;
+	font-size: 18px;
+	color: #505050;
+
+	.top {
+		border-bottom: 1px solid @border-color;
+		label {
+			display: inline-block;
+			width: 100%;
+			background: url('../imgs/percent.png') no-repeat right 14px;
+			background-size: 20px;
+			.padding(0,0,20,0);
+		}
+
+		input {
+			.width(240);
+			.line-height(34);
+			text-align: center;
+			font-size: 30px;
+			border: none;
+		}
+	}
+
+	li {
+		float: left;
+		.width(100);
+		.line-height(40);
+		.margin(0, 0, 5, 10);
+		text-align: center;
+		border: 1px solid @border-color;
+		border-radius: 3px;
+	}
+}

@@ -1,0 +1,42 @@
+<html>
+
+	<head>
+		<script type="text/javascript" src="file:///android_asset/www/cordova.js"></script>
+		<script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.js"></script>
+	</head>
+
+	<body>
+		test1
+		<script type="text/javascript">
+			// 在使用这些接口之前载入本地的js文件
+			// file:///android_asset/www/cordova.js
+
+			// 在以下代码之后才可以使用以下方法：
+			alert(window.navigator.userAgent);
+			document.addEventListener('deviceready', onDeviceReady, false);
+
+			var onDeviceReady = function() {
+				alert('ready')
+				window.addEventListener('inputInfo', function (string) {
+					document.write(string);
+				})
+			}
+			// onDeviceReady之后才可以使用
+
+			// 关于监听键盘输入数字：
+			// 监听window的event “inputNumber”，后面接的是数字
+
+
+			// 关于两个app之间的通信：
+			// 使用Icommon.sendInfo发送信息
+			// 使用window的event "inputInfo", 后面接的是对方传送过来的String信息
+
+			// 两个app：
+			// ipos.apk运行系统页面
+			// ipos_fe.apk运行广告和展示页面
+
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,100 @@
+@import '../variables.less';
+
+employee{
+  display: block;
+  
+.shop-chart{
+	display:block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	.shop-chart{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		.padding(0,100,0,0);
+		.dataTitle{
+			width: 100%;
+			.height(50);
+
+			background: #fff;
+			position: absolute;
+			.top(0);
+			border-bottom: 1px solid #f1f1f1;
+			p{
+				.width(260);
+				height: 100%;
+				margin: 0 auto;
+				display: flex;
+				a{
+					flex: 1;
+					text-align: center;
+					display: block;
+					height: 100%;
+					text-align: center;
+					color: #666;
+					.line-height(50);
+					.font-size(24);
+					&.active{
+						border-bottom: 4px solid #FE6464;
+						color: #FE6464;
+					}
+				}
+			}
+		}
+		.data-item{
+			width: 100%;
+			height: 100%;
+			.store-data{
+				width: 100%;
+				height: 100%;
+				.chart-top{
+					position: absolute;
+					width: 100%;
+					.height(50);
+					background: #fff;
+					text-align: center;
+					.top(50);
+
+					.chart-dater{
+						height: 100%;
+						.line-height(50);
+						.font-size(20);
+						.width(720);
+						margin: 0 auto;
+					}
+					span:after{
+				    content: ' ';
+				    background: url(../imgs/pull-down.png) no-repeat;
+				    .height(12);
+				    .width(18);
+				    background-size: contain;
+				    display: inline-block;
+					}
+				}
+				.chart-content{
+					width: 100%;
+					height: 100%;
+					.padding(25,25,25,50);
+
+					.chart-data{
+						width: 100%;
+						height: 100%;
+						background: #fff;
+					}
+				}
+			}
+			.employee-data{
+				width: 100%;
+				height: 100%;
+				// background-color: #fff;
+			}
+		}
+
+
+
+
+	}
+
+}
+}

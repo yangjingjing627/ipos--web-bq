@@ -1,0 +1,115 @@
+@import '../variables.less';
+
+order-printer {
+	font-size: 0.333333rem;
+
+	.card {
+		width: 7.787037rem;
+		background: #fff;
+		margin: auto;
+		border: 1px solid @border-color;
+		border-radius: @radius;
+		display: block;
+		// padding: 0.277778rem;
+		margin-bottom: 0.185185rem;
+		height: 11.111111rem;
+		position: relative;
+		margin-top: 0.277778rem;
+		padding: 0.37037rem;
+
+		label {
+			position: relative;
+		}
+		label:after {
+			content: ' ';
+		    background: url(../imgs/pull-down.png) no-repeat;
+		    height: 0.222222rem;
+		    width: 0.333333rem;
+		    margin-left: 0.092593rem;
+		    background-size: contain;
+		    background-color: #ffffff;
+		    display: inline-block;
+		    position: absolute;
+		    right: -3px;
+		    top: 5px;
+		    z-index: 1000;
+		}
+
+		select {
+	    	background: #ffffff;
+	    	border: none;
+			outline: none;
+	    }
+
+		button {
+			height: 0.925926rem;
+			width: 2.777778rem;
+			border: 1px solid @red;
+			border-radius: @radius;
+			color: @red;
+			font-size: 0.333333rem;
+			font-weight: bold;
+			background: #ffffff;
+    		margin: 0.925926rem 0 1.666667rem 0;
+		}
+
+		p {
+			line-height: 0.694444rem;
+			border-bottom: 1px solid @border-color;
+			padding-top: 0.37037rem;
+
+			.switch {
+				width: 0.361852rem;
+				height: 0.351852rem;
+				background: @red;
+				display: inline-block;
+				position: relative;
+				border: 1px solid @red;
+				float: right;
+				top: 0.148148rem;
+			}
+
+			.switch:before {
+				content: " ";
+				display: inline-block;
+				height: 0.324074rem;
+				width: 0.324074rem;
+				background: @red;
+				border-radius: 50%;
+				position: absolute;
+				left: -0.172037rem;
+				border: 1px solid @red;
+				top: -1px;
+			}
+
+			.switch:after {
+				content: " ";
+				display: inline-block;
+				height: 0.324074rem;
+				width: 0.324074rem;
+				background: #ffffff;
+				border-radius: 50%;
+				position: absolute;
+				left: 0.172037rem;
+				border: 1px solid @red;
+				top: -1px;
+			}
+
+			.switch.close:before {
+				background: #ffffff;
+				border: 1px solid #cccccc;
+			}
+
+			.switch.close:after {
+				background: #cccccc;
+				border: 1px solid #cccccc;
+			}
+
+			.switch.close {
+				background: #cccccc;
+				border: 1px solid #cccccc;
+			}
+		}
+	}
+
+}

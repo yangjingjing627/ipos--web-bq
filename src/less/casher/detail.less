@@ -1,0 +1,83 @@
+@import '../variables.less';
+
+.detail {
+	height: 100%;
+	width: 100%;
+	.padding(15,15,15,15);
+
+	.pic {
+		height: 50%;
+		width: 100%;
+		overflow: hidden;
+		background-size: contain;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-image: url('../imgs/default-product.png');
+	}
+
+	p {
+		.padding(0, 10);
+		color: #505050;
+		font-size: 18px;
+		.line-height(24);
+		&.detail-goodsName {
+			position: relative;
+			i.change-price {
+				position: absolute;
+				right: 0;
+				top: 0;
+				color: #FE6464;
+				font-size: 0.37037037rem;
+				font-style: normal;
+			}
+		}
+	}
+
+	strong {
+		display: block;
+		.padding(0, 6, 0, 6);
+		color: @red;
+		font-size: 22px;
+		font-weight: 400;
+		.line-height(40);
+	}
+
+	i.line {
+		display: block;
+		background-color:  #ebebeb;
+		.height(6);
+	}
+
+	.more {
+		font-size: 18px;
+		color: #9b9b9b;
+
+		span {
+			display: inline-block;
+			background: url('../imgs/phone.png') left center no-repeat;
+			.line-height(60);
+			text-indent: 30px;
+			background-size: 20%;
+		}
+	}
+	.modify-cart{
+ 		.font-size(16);
+ 		.line-height(20);
+ 		margin-top: 15px;
+ 		label{
+ 			.font-size(20);
+ 		}
+ 		span{
+ 			border: 1px solid #ccc;
+ 			border-radius: 4px;
+ 			display: inline-block;
+ 			.height(20);
+ 			.width(140);
+ 			text-indent: 15px;
+ 			background: #FFDDDD;
+ 			.line-height(20);
+ 			cursor: pointer;
+ 		}
+ 	}
+
+}

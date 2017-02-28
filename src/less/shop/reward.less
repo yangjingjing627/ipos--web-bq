@@ -1,0 +1,170 @@
+@import '../variables.less';
+/**
+ *  create by wuxin
+ *
+ */
+reward {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .padding(0,50,0,0);
+    .reward-top {
+        background: #fff;
+        width: 100%;
+        .height(50);
+        position: absolute;
+        top: 0;
+        a {
+            display: block;
+            text-align: center;
+            .width(75);
+            .height(30);
+            .line-height(30);
+            background: #fe5f5f;
+            color: #FFFFFF;
+            position: absolute;
+            .right(45);
+            .top(10);
+            border-radius: 3px;
+        }
+    }
+    .reward {
+        width: 100%;
+        height: 100%;
+        .clear {
+            clear: both;
+        }
+        .reward-list {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            ul {
+                display: block;
+                width: 100%;
+                .padding(15,25,0,0);
+                li.re-ad {
+                    .icon {
+                        background: url("../imgs/ad-income.png") center bottom no-repeat;
+                        .background-size(39);
+                    }
+                    h5 {
+                        color: #3BC9F2;
+                    }
+                }
+                li.re-cp {
+                    .icon {
+                        background: url("../imgs/ach-coupon.png") center bottom no-repeat;
+                        .background-size(40);
+                    }
+                    h5 {
+                        color: #FE7373;
+                    }
+                }
+                li.re-app {
+                    .icon {
+                        background: url("../imgs/reward-app.png") center bottom no-repeat;
+                        .background-size(30);
+                    }
+                    h5 {
+                        color: #7DD43D;
+                    }
+                }
+                li.re-global {
+                    .icon {
+                        background: url("../imgs/re-global.png") center bottom no-repeat;
+                        .background-size(29);
+                    }
+                    h5 {
+                        color: #359df5;
+                    }
+                }
+                li {
+                    position: relative;
+                    .width(200);
+                    .height(151);
+                    .margin(12,0,12,25);
+                    background: #FFFFFF;
+                    display: block;
+                    text-align: center;
+                    float: left;
+                    -webkit-box-shadow: 1px 4px 4px 2px rgba(182, 160, 159, 0.5);
+                    -moz-box-shadow: 1px 4px 4px 2px rgba(182, 160, 159, 0.5);
+                    box-shadow: 1px 4px 4px 2px rgba(182, 160, 159, 0.5);
+                    .icon {
+                        .height(57);
+                    }
+                    h5 {
+                        .margin(0,17,0,0);
+                        .font-size(18);
+                        color: #3BC9F2;
+                        font-weight: normal;
+                        .line-height(17);
+                    }
+                    .look-div {
+                        .width(200);
+                        .height(40);
+                        position: absolute;
+                        bottom: 0;
+                        background: #FE7373;
+                    }
+                    .look-a {
+                        .font-size(18);
+                        display: block;
+                        color: #ffffff;
+                        .margin(0,10,0,0);
+                        font-weight: normal;
+                        .line-height(17);
+                    }
+                }
+            }
+        }
+    }
+}
+.reward-pop {
+    i {
+        font-style: normal;
+    }
+    h2 {
+        .margin(26,15,0,0);
+        .font-size(18);
+        color: #505050;
+        font-weight: normal;
+        font-weight: bold;
+        .line-height(17);
+    }
+    h5 {
+        .margin(26,9,0,0);
+        .font-size(15);
+        color: #666666;
+        font-weight: normal;
+        .line-height(17);
+    }
+    .reward-in-em {
+        text-align: center;
+        .font-size(16);
+        color: #666;
+    }
+}
+.reward-ad-tab {
+    .width(451);
+    .margin(26,10,26,10);
+    border-left: 1px solid #999999;
+    border-top: 1px solid #999999;
+    li {
+        .width(450);
+        display: flex;
+        span {
+            .height(30);
+            .line-height(30);
+            display: inline-block;
+            border-right: 1px solid #999999;
+            border-bottom: 1px solid #999999;
+            text-align: center;
+            flex: 1;
+            .font-size(15);
+            color: #666666;
+            font-weight: normal;
+        }
+    }
+}

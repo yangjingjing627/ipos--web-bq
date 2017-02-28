@@ -1,0 +1,97 @@
+@import '../variables.less';
+app-index {
+    ul.app-index {
+        padding: 0.37037rem;
+        li {
+            font-size: 0.296296rem;
+            float: left;
+            .margin(0,10,0,0);
+            .height(116);
+            display: block;
+            overflow: hidden;
+            .app-name {
+                .font-size(16);
+                text-align: center;
+                .margin(0,10,0,0);
+                .line-height(20);
+                width: 100%;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                word-break: break-all;
+                -webkit-box-pack: center;
+                white-space: normal;
+            }
+            .app-list {
+                display: block;
+                text-align: center;
+                color: @color;
+                position: relative;
+                .height(65);
+                div.no-down {
+                    .height(65);
+                    .width(65);
+                    border-radius: 12px;
+                    position: absolute;
+                    .left(31);
+                    .top(0);
+                    overflow: hidden;
+                    background: #2e3340;
+                    opacity: 0.6;
+                }
+                .no-down.downloading {
+                    background: none;
+                    opacity: 1;
+                    .download-no {
+                        background: #000000;
+                        opacity: 0.6;
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        left: 0;
+                    }
+                    .download-yes {
+                        background: #000000;
+                        opacity: 0.15;
+                        position: absolute;
+                        width: 100%;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    .downloading-word {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        .line-height(65);
+                        text-align: center;
+                        .font-size(26);
+                        color: #fff;
+                        z-index: 10;
+                    }
+                }
+                div.name {
+                    text-align: center;
+                    margin-top: 0.240741rem;
+                }
+            }
+            .app-img {
+                .height(65);
+                .width(65);
+                border-radius: 12px;
+                position: absolute;
+                overflow: hidden;
+                .left(31);
+                .top(0);
+                img {
+                    .height(65);
+                    .width(65);
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+}
